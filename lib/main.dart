@@ -208,7 +208,7 @@ class _ProfileCard extends StatelessWidget {
                   ),
                   child: ClipOval(
                     child: Image.asset(
-                      'images/pfp.png',
+                      'assets/images/pfp.png',
                       width: 100,
                       height: 100,
                       fit: BoxFit.cover,
