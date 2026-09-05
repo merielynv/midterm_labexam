@@ -61148,7 +61148,7 @@ $0(){return this.a.d="[LONG PRESS] "+this.b},
 $S:0}
 A.Ie.prototype={
 U(a){var s,r,q,p,o,n=this,m=null,l=A.ko(20),k=t.G,j=A.lB(A.d([A.aaz(B.cB,B.zB,20),A.P9(A.MX(A.hk("PERSONAL PORTFOLIO",A.dn(m,m,B.b5,m,m,m,m,m,m,m,m,16,m,m,B.b9,m,m,!0,m,1.5,m,m,m,m,m,m),m),m,m)),A.aaz(B.cB,A.ni(B.zj,B.jB,m,m),20)],k),B.aa,B.pe,B.aO),i=A.a70(B.bW,2.5)
-i=A.lB(A.d([A.iV(m,new A.zz(new A.rs(A.amr(m,m,new A.pV("images/pfp.png",m,m)),new A.a3s(),100,100,B.w7,m),m),B.B,m,m,new A.dh(m,m,i,m,m,m,B.dx),m,m,m,B.yR,m,m,m),B.Hz,A.P9(A.qp(A.d([A.hk("Merielyn B. Navea",A.dn(m,m,B.b5,m,m,m,m,m,m,m,m,22,m,m,B.b9,m,m,!0,m,m,m,m,m,m,m,m),m),B.ig,A.hk("College Student",A.dn(m,m,B.bW,m,m,m,m,m,m,m,m,14,m,m,B.jZ,m,m,!0,m,m,m,m,m,m,m,m),m),B.ig,A.lB(A.d([A.ni(B.zi,B.cE,m,16),B.HA,A.hk("Cabuyao, Laguna, Philippines",A.dn(m,m,B.cE,m,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),m)],k),B.aa,B.an,B.aO)],k),B.as))],k),B.aa,B.an,B.aO)
+i=A.lB(A.d([A.iV(m,new A.zz(new A.rs(A.amr(m,m,new A.pV("assets/images/pfp.png",m,m)),new A.a3s(),100,100,B.w7,m),m),B.B,m,m,new A.dh(m,m,i,m,m,m,B.dx),m,m,m,B.yR,m,m,m),B.Hz,A.P9(A.qp(A.d([A.hk("Merielyn B. Navea",A.dn(m,m,B.b5,m,m,m,m,m,m,m,m,22,m,m,B.b9,m,m,!0,m,m,m,m,m,m,m,m),m),B.ig,A.hk("College Student",A.dn(m,m,B.bW,m,m,m,m,m,m,m,m,14,m,m,B.jZ,m,m,!0,m,m,m,m,m,m,m,m),m),B.ig,A.lB(A.d([A.ni(B.zi,B.cE,m,16),B.HA,A.hk("Cabuyao, Laguna, Philippines",A.dn(m,m,B.cE,m,m,m,m,m,m,m,m,m,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),m)],k),B.aa,B.an,B.aO)],k),B.as))],k),B.aa,B.an,B.aO)
 s=A.lB(A.d([new A.pb(B.zp,"BSIT","Course/Program",m),B.ie,new A.pb(B.ze,"3rd Year","Year Level",m),B.ie,new A.pb(B.zw,"15","Certifications",m)],k),B.aa,B.an,B.aO)
 r=A.bO(102,B.ar.R()>>>16&255,B.ar.R()>>>8&255,B.ar.R()&255)
 q=A.ko(14)
