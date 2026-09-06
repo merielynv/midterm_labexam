@@ -51,6 +51,9 @@ class PortfolioHomePage extends StatefulWidget {
 
 class _PortfolioHomePageState extends State<PortfolioHomePage> {
   // Exam-specific data (from the Laboratory Examination form).
+  // Hardcoded to the actual date the exam was passed/submitted,
+  // rather than whatever date happens to be on the device when run.
+  static const String examDate = 'September 6, 2026';
   static const String studentFullName = 'Merielyn B. Navea';
   static const String professorFullName = 'Mr. Albert Alforja';
 
@@ -59,27 +62,8 @@ class _PortfolioHomePageState extends State<PortfolioHomePage> {
   String _consoleOutput =
       'Outputs will appear here after a gesture. Check dev tools console for gesture output history.';
 
-  String _formattedExamDate() {
-    const months = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
-    ];
-    final now = DateTime.now();
-    return '${months[now.month - 1]} ${now.day}, ${now.year}';
-  }
-
   void _onSingleTap() {
-    final output = 'Exam Date: ${_formattedExamDate()}';
+    final output = 'Exam Date: $examDate';
     // Requirement: Single Tap -> print current date of the examination.
     debugPrint('[SINGLE TAP] $output');
     setState(() => _consoleOutput = '[SINGLE TAP] $output');
@@ -169,6 +153,7 @@ class _ProfileCard extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'PERSONAL PORTFOLIO',
+                      textAlign: TextAlign.center,
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
@@ -209,12 +194,12 @@ class _ProfileCard extends StatelessWidget {
                   child: ClipOval(
                     child: Image.asset(
                       'assets/images/pfp.png',
-                      width: 100,
-                      height: 100,
+                      width: 90,
+                      height: 90,
                       fit: BoxFit.cover,
                       errorBuilder: (context, error, stackTrace) => Container(
-                        width: 100,
-                        height: 100,
+                        width: 90,
+                        height: 90,
                         color: AppColors.beige,
                         child: Icon(
                           Icons.person,
@@ -233,7 +218,7 @@ class _ProfileCard extends StatelessWidget {
                       Text(
                         'Merielyn B. Navea',
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: AppColors.darkBrown,
                         ),
@@ -256,9 +241,14 @@ class _ProfileCard extends StatelessWidget {
                             color: AppColors.charcoal,
                           ),
                           const SizedBox(width: 4),
-                          Text(
-                            'Cabuyao, Laguna, Philippines',
-                            style: TextStyle(color: AppColors.charcoal),
+                          Expanded(
+                            child: Text(
+                              'Cabuyao, Laguna, Philippines',
+                              style: TextStyle(
+                                color: AppColors.charcoal,
+                                fontSize: 10,
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -272,11 +262,7 @@ class _ProfileCard extends StatelessWidget {
             // --- Stat chips row ---
             Row(
               children: [
-                _StatChip(
-                  icon: Icons.school,
-                  label: 'BSIT',
-                  sub: 'Course/Program',
-                ),
+                _StatChip(icon: Icons.school, label: 'BSIT', sub: 'Program'),
                 const SizedBox(width: 10),
                 _StatChip(
                   icon: Icons.bar_chart,
